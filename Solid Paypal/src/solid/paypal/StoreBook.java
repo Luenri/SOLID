@@ -14,7 +14,7 @@ import solid.paypal.Book;
  *
  * @author CltControl
  */
-class StoreBook {
+class StoreBook implements Pago {
 
 	private ArrayList<Book> books;
 	private Book book;
@@ -50,7 +50,13 @@ class StoreBook {
 		 * 
 		 */
 	}
-	
+        
+        void searchBook() {
+		/*
+		 * Search a book for author or title or category
+		 */
+	}
+
 
 }
 
