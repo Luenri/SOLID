@@ -40,6 +40,32 @@ public class Book {
 	void setAuthor(String author) {
 		this.author = author;
 	}
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public boolean isState() {
+        return state;
+    }
+
+    public void setState(boolean state) {
+        this.state = state;
+    }
+        
+        
 	void searchBook() {
 		/*
 		 * Search a book for author or title or category

@@ -1,3 +1,5 @@
+package solid.paypal;
+
 
 import java.util.ArrayList;
 import solid.paypal.Book;
@@ -19,9 +21,7 @@ class StoreBook {
 	
 	
 	public StoreBook() {
-		/** 
-		 * Initialize array with books
-		 */
+		books = new ArrayList<Book>();
 	}
 	
 	public void pay(String method, Book book) {
@@ -33,16 +33,16 @@ class StoreBook {
 	}
 	
 	public void pay_card(String card, Book book) {
-		/*
-		 * change state to true
-		 */
+		book.setState(true);
 	}
 	
 	public void pay_cash(String money, Book book) {
-		/*
-		 * change state to true
-		 */
+		book.setState(true);
 	}
+        
+        public void pay_paypal(Book book){
+                book.setState(true);
+        }
 	
 	public void removeBooksPurchased(ArrayList<Book> books) {
 		/*
